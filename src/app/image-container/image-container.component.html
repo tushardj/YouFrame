@@ -1,0 +1,32 @@
+<div *ngIf="imageList">
+  <div *ngFor="let i of rowIndexArray" class="row">
+    <div class="imagebox col-sm-4" *ngIf="imageList[3*i]">
+      <div class="image-containers">
+      <img data-toggle="modal" data-target="#myModal" (click)="passSelectedImage(imageList[3*i])" [id]="imageList[3*i].name" [src]="imageList[3*i].imageUrl" class="img-fluid img-rounded preview-image">
+      <div class="img-title">
+        <span class="imagebox-desc">{{imageList[3*i].name}}</span>
+    </div>
+    </div>
+  </div>
+    <div class="imagebox col-sm-4" *ngIf="imageList[3*i+1]">
+      <div class="image-containers">
+      <img  data-toggle="modal" data-target="#myModal" (click)="passSelectedImage(imageList[3*i+1])" [id]="imageList[3*i+1].name" [src]="imageList[3*i+1].imageUrl" class="img-fluid img-rounded preview-image">
+      <div class="img-title">
+        <span>{{imageList[3*i+1].name}}</span>
+      </div>
+    </div>
+    </div>
+    <div class="imagebox col-sm-4" *ngIf="imageList[3*i+2]">
+      <div class="image-containers">
+      <img data-toggle="modal" data-target="#myModal" (click)="passSelectedImage(imageList[3*i+2])" [id]="imageList[3*i+2].name" [src]="imageList[3*i+2].imageUrl" class="img-fluid img-rounded preview-image">
+      <div class="img-title">
+        <span>{{imageList[3*i+2].name}}</span>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<app-image-modal [imageToshow]="selectedImage" *ngIf="isImageSelectToShow"></app-image-modal>
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button> -->

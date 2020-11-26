@@ -1,0 +1,27 @@
+.img-fluid{
+  width: 100%;
+  height: 210px;
+}
+.img-rounded {
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.imagebox{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.image-containers{
+  border-radius: 6px;
+  background: white;
+  transition: box-shadow .3s;
+}
+.image-containers:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.8);
+}
+.img-title{
+  text-align: center;
+  overflow: hidden;
+}

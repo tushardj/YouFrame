@@ -1,0 +1,38 @@
+.navbar{
+  background-color: #2C5282 !important;
+  justify-content: center;
+  position: fixed;
+}
+.top-nav-bar{
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.container{
+  margin-top: 70px;
+}
+.card-footer{
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+.navbar> div{
+  color: #EBF8FE;
+}
+.upload-btn{
+  text-align: center;
+  margin: 15px;
+}
+.upload-button{
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #2C5282;
+}
+.upload-button>span{
+  background: url("../assets/upload.svg") no-repeat;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
